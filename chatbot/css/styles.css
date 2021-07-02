@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Calibri';
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button, a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.chatbot-container {
+  width: 416px;
+  background-image: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 0;
+  position: relative;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.07);
+}
+
+.chatbot-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  z-index: 0;
+}
+
+.chatbot-container .title {
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.chatbot-container .sub-title {
+  z-index: 1;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.chatbot-container .text {
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.chatbot-container .card {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.chatbot-container .card ul {
+  list-style: none;
+}
+
+.chatbot-container .card ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.chatbot-container .card ul li .circle {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 118, 0, 0.8);
+  border: 3px solid rgba(255, 226, 200, 0.8);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chatbot-container .card .card-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chatbot-container .card .card-title span {
+  margin-left: 10px;
+  width: 20px;
+  border-radius: 50px;
+  height: 20px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  background-color: #fff1e4;
+  color: #ff7b00;
+}
+
+.chatbot-container .card .btn-primary {
+  width: 100%;
+  padding: 13px 0;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+  color: #333;
+  border-radius: 50px;
+  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.chatbot-container .card .btn-primary span {
+  margin-right: 10px;
+}
+
+@media (max-width: 350px) {
+  .chatbot-container {
+    width: 320px;
+    padding: 20px;
+  }
+  .chatbot-container .title {
+    font-size: 18px;
+  }
+  .chatbot-container .sub-title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .chatbot-container .text {
+    font-size: 12px;
+  }
+  .chatbot-container .card {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  .chatbot-container .card ul li {
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .chatbot-container .card .card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
